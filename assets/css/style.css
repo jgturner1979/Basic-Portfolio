@@ -3,12 +3,17 @@
 * {
     box-sizing: border-box;
 }
+/* This is the header for all 3 webpages */
 
 header {
     font-family: 'Georgia', 'Times New Roman', Times, serif;
     background: #ffffff;
     height: 100px;
+    margin-bottom: 40px;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
 }
+/* This is the navigation content css styles for all 3 webpages */
 
 nav {
     font-family: Arial, Helvetica, sans-serif;
@@ -35,6 +40,14 @@ a {
     color: #777777;
   }
 
+@media (hover: hover) {
+    a:hover {
+        color: #F6DB5F;
+    }
+}
+
+/* This is the heading for all 3 web pages */
+
 h1 {
     font-size: 24px;
     position: absolute;
@@ -47,6 +60,8 @@ h1 {
     text-align: center;
     padding-top: 33px;
     margin: 0 auto;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
 }
 
 h2 {
@@ -54,10 +69,13 @@ h2 {
     font-family: 'Georgia', 'Times New Roman', Times, serif;
     margin: 0 auto;
     color: #4aaaa5;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
     text-align: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
 }
+
+/* Here is the body css style for all 3 webpages */
 
 body {
     background-image: url(../images/tweed_@2X.png);
@@ -78,19 +96,156 @@ img {
 
 .wrapper {
     width: 960px;
+    height: auto;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.box {
+.box-home {
     background: #ffffff;
     width: 960px;
     text-align: left;
     line-height: 30px;
     padding: 20px;
     margin: 0 auto;
+    z-index: 1;
+}
+
+.about {
+    padding: 20px;
+}
+
+/* Here is the portfolio page css */
+
+.box-portfolio {
+    background: #ffffff;
+    width: 960px;
+    height: 900px;
+    text-align: left;
+    line-height: 30px;
+    padding: 20px;
+    margin: 0 auto;
     margin-top: 20px;
 }
+
+.portfolio {
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    width: 200px;
+    height: 200px;
+}
+
+@media (hover:hover) {
+    .portfolio:hover {
+        filter: opacity(100%);
+    }
+}
+
+.box-1a {
+    background-image: url(../images/IMG_2556.jpg);
+    filter: opacity(75%);
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    z-index: 0;
+}
+
+.box-1b {
+    position: absolute;
+    background: #4aaaa5;
+    padding-top: 22px;
+    width: 200px;
+    height: 66px;
+    bottom: -40px;
+    left: -40px; 
+    z-index: 1;
+}
+
+.box-2a {
+    background-image: url(../images/IMG_2910.jpg);
+    filter: opacity(75%);
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    z-index: 0;
+}
+
+.box-2b {
+    position: absolute;
+    background: #4aaaa5;
+    padding-top: 22px;
+    width: 200px;
+    height: 66px;
+    bottom: -40px;
+    left: 200px; 
+    z-index: 1;
+}
+
+.box-3a {
+    background-image: url(../images/IMG_4484.jpg);
+    filter: opacity(75%);
+    position: absolute;
+    top: 260px;
+    left: -40px;
+    z-index: 0;
+}
+
+.box-3b {
+    position: absolute;
+    background: #4aaaa5;
+    padding-top: 22px;
+    width: 200px;
+    height: 66px;
+    bottom: -290px;
+    left: -40px; 
+    z-index: 1;
+}
+
+.box-4a {
+    background-image: url(../images/IMG_4738.jpg);
+    filter: opacity(75%);
+    position: absolute;
+    top: 260px;
+    left: 200px;
+    z-index: 0;
+}
+
+.box-4b {
+    position: absolute;
+    background: #4aaaa5;
+    padding-top: 22px;
+    width: 200px;
+    height: 66px;
+    bottom: -290px;
+    left: 200px; 
+    z-index: 1;
+}
+
+.box-5a {
+    background-image: url(../images/IMG_0110.jpg);
+    filter: opacity(75%);
+    position: absolute;
+    top: 500px;
+    left: -40px;
+    z-index: 0;
+}
+
+.box-5b {
+    position: absolute;
+    background: #4aaaa5;
+    padding-top: 22px;
+    width: 200px;
+    height: 66px;
+    bottom: -530px;
+    left: -40px; 
+    z-index: 1;
+}
+
+/* Here is the footer css for all 3 webpages */
 
 footer {
     position: relative;
